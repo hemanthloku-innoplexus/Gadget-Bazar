@@ -1,0 +1,20 @@
+<!-- partial-about.html -->
+
+<!-- <div class="jumbotron text-center">
+    <h1>The About Page</h1>
+    <p>This page demonstrates <span class="text-danger">multiple</span> and <span class="text-danger">named</span> views.</p>
+</div> -->
+
+<div class="clearfix">
+
+    <!-- COLUMN ONE NAMED VIEW -->
+    <div class=" col-md-3 mag">
+        <div ui-view="filter"></div>
+    </div>
+
+    <!-- COLUMN TWO NAMED VIEW -->
+    <div class=" col-md-9 mag pad">
+        <div ui-view="list"></div>
+    </div>
+
+</div>

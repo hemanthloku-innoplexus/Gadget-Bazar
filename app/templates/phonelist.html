@@ -1,0 +1,17 @@
+<div class="panel panel-default" style="margin-top:10px;">
+  <div class="panel-body">
+    <div class="form-inline">
+      <input type="text" class="form-control" placeholder="Search" />
+      <button type="button" class="btn btn-info">Add</button>
+    </div>
+    <div style="margin-top:10px;">
+      <ul class="list-group">
+        <button class="list-group-item" ng-repeat="n in filterctrl.phones | unique:'brand'" ng-click="filterctrl.getid(n.id);filterctrl.getPhones(n.brand)"> {{n.brand}} </button>
+      </ul>
+      <ul class="list-group">
+        <lable>mobiles</lable>
+        <button class="list-group-item" ng-repeat="n in filterctrl.phones | filter:{'brand':filterctrl.brandName}:true" ng-click="filterctrl.getid(n.id)"> {{n.name}} </button>
+      </ul>
+    </div>
+  </div>
+</div>
